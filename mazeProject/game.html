@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MazeRunner - Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container game-container">
+        <header class="game-header">
+            <h1 class="logo" onclick="window.location.href='index.html'">MAZE<span class="accent">RUNNER</span></h1>
+            <div id="game-stats">
+                <span id="timer">Time: 0:00</span>
+                <span id="moves">Moves: 0</span>
+            </div>
+        </header>
+
+        <main class="game-main">
+            <div class="controls">
+                <button id="generateMaze" class="game-btn">New Maze</button>
+                <button id="solveMaze" class="game-btn">AI Solve</button>
+                <button id="resetMaze" class="game-btn">Reset</button>
+            </div>
+
+            <div class="canvas-container">
+                <canvas id="mazeCanvas"></canvas>
+            </div>
+
+            <div class="info">
+                <p>Use arrow keys or WASD to move</p>
+                <p>Press 'AI Solve' to watch the algorithm in action</p>
+            </div>
+        </main>
+
+        <footer class="game-footer">
+            <button onclick="window.location.href='index.html'" class="back-btn">Back to Games</button>
+        </footer>
+    </div>
+
+    <script src="js/maze.js"></script>
+    <script src="js/pathfinding.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html> 

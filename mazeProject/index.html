@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MAZE<span class="accent">RUNNER</span></h1>
+            <p class="subtitle">Challenge Your Mind. Test Your Skills.</p>
+        </header>
+
+        <main>
+            <div class="game-modes">
+                <div class="mode-card" onclick="startGame('classic')">
+                    <h2>Classic Mode</h2>
+                    <div class="preview classic-preview"></div>
+                    <p>Navigate through the maze at your own pace</p>
+                </div>
+                <div class="mode-card" onclick="startGame('timed')">
+                    <h2>Time Attack</h2>
+                    <div class="preview timed-preview"></div>
+                    <p>Race against the clock to beat your best time</p>
+                </div>
+                <div class="mode-card" onclick="startGame('dynamic')">
+                    <h2>Dynamic Mode</h2>
+                    <div class="preview dynamic-preview"></div>
+                    <p>Face a maze that changes as you move</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 MazeRunner. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/preview.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html> 
